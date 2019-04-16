@@ -15,7 +15,7 @@ const nextSlide = () => {
         //add current to next sibling
         current.nextElementSibling.classList.add('current');
     } else {
-        //add current to start 
+        //add current to start
         slides[0].classList.add('current');
     }
     setTimeout(() => current.classList.remove('current'));
@@ -31,7 +31,7 @@ const prevSlide = () => {
         //add current to prev sibling
         current.previousElementSibling.classList.add('current');
     } else {
-        //add current to last 
+        //add current to last
         slides[slides.length - 1].classList.add('current');
     }
     setTimeout(() => current.classList.remove('current'));
@@ -71,12 +71,16 @@ if (auto) {
 var menu = document.getElementById("menu-title");
 var close = document.getElementById("menu-close");
 
+/*
 menu.onclick = function hide() {
     document.getElementById("menu-title").style.visibility = "hidden";
     document.getElementById("menu-list").style.visibility = "visible";
 }
+*/
 
+/*
 close.onclick = function show() {
     document.getElementById("menu-title").style.visibility = "visible";
     document.getElementById("menu-list").style.visibility = "hidden";
 }
+*/
