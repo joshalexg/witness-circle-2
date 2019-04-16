@@ -269,7 +269,9 @@ button#prev {
     font-size: 2em;
     font-weight: bold;
 }
+*/
 
+/* Original Q/A
 .qa-section ul {
     margin: 30px 0;
 }
@@ -286,6 +288,9 @@ button#prev {
     font-weight: bold;
 }
 
+*/
+
+/* Contact
 .contact-section {
     border-bottom: none;
 }
@@ -304,6 +309,12 @@ button#prev {
     margin: 5px;
     text-align: center;
 }
+<<<<<<< HEAD
+
+*/
+
+
+=======
 */
 @media (max-width: 375px) {
     .about-section,
@@ -337,4 +348,31 @@ button#prev {
     }
 
 
+}
+
+
+
+/*New Q/A Section */
+
+.qa h3 {
+  text-align: center;
+  font-size: 32px;
+  font-weight: bold;
+  opacity: .70;
+}
+
+.qa ul {
+  margin: 30px 0;
+}
+
+.qa ul li {
+  list-style: none;
+  text-align: left;
+  padding: 10px;
+  font-size: 16px;
+}
+
+li:nth-child(odd) {
+  font-weight: bold;
+  opacity: 0.70;
 }
