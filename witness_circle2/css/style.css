@@ -1,0 +1,304 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+    font-family: 'Raleway', sans-serif;
+}
+
+body {
+    box-sizing: border-box;
+    height: 100%;
+    font-size: 10px;
+}
+
+/*----------------------------------------------*/
+/*------------------- LOGO ---------------------*/
+/*----------------------------------------------*/
+
+.logo {
+    position: relative;
+    height: 100px;
+}
+
+.logo img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 75px;
+    width: 150px; 
+}
+
+
+/*----------------------------------------------*/
+/*------------------- SLIDER -------------------*/
+/*----------------------------------------------*/
+
+.slider {
+    height: 500px;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+}
+
+.slide.current {
+    opacity: 1;
+}
+
+.slide:first-child {
+    background-image: url(../img/adult-bridal-bride-1043902.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.slide:nth-child(2) {
+    background-image: url(../img/beautiful-blur-bridal-256737.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.slide:nth-child(3) {
+    background-image: url(../img/bride-ceremony-chairs-794254.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.slide:nth-child(4) {
+    background-image: url(../img/celebration-craft-creative-949586.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/*----------------------------------------------*/
+/*---------------- SLIDER BUTTONS --------------*/
+/*----------------------------------------------*/
+
+button#next {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+}
+
+button#prev {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+}
+
+.buttons button {
+    border: 2px solid #fff;
+    background-color: transparent;
+    color: #fff;
+    cursor: pointer;
+    padding: 13px 15px; 
+    border-radius: 50%;
+    outline: none;
+}
+
+.buttons button:hover {
+    background: #fff;
+    color: #333;
+}
+
+/*----------------------------------------------*/
+/*-------------------- MENU --------------------*/
+/*----------------------------------------------*/
+
+.menu {
+    height: 100px;
+    position: relative;
+}
+
+#menu-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 5px 15px;
+    font-size: 3em;
+    text-decoration: none;
+    color: #444;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 500;
+    border: 2px solid #444;
+    opacity: .7;
+    cursor: pointer;
+}
+
+#menu-title:hover {
+    opacity: 1;
+}
+
+
+.menu ul {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: inline;
+    width: 100%;
+    text-align: center;
+}
+
+#menu-list {
+    visibility: hidden;
+}
+
+.menu a {
+    padding: 5px;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 1.6em;
+    color: #444;
+    font-weight: bold;
+    opacity: .5;
+}
+
+.menu a:hover {
+    opacity: 1;
+}
+
+#menu-close {
+    cursor: pointer;
+}
+
+
+
+
+
+.about-section,
+.services-section,
+.qa-section,
+.contact-section {
+    position: relative;
+    height: auto;
+    width: 100%;
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto 50px auto;
+    color: #444;
+    border-bottom: 1px solid rgba(68, 68, 68, 0.3);
+}
+
+.about-section span,
+.services-section span,
+.qa-section span {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.about-section p,
+.services-section p,
+.qa-section p,
+.contact-section p {
+    text-align: left;
+    letter-spacing: 2px;
+    font-size: 1.6em;
+    padding: 50px 20px;
+    line-height: 25px;
+    text-indent: 25px;
+}
+
+.services-section ul {
+    margin-bottom: 30px;
+}
+
+.services-section li {
+    list-style: none;
+    text-align: center;
+    padding: 10px;
+    letter-spacing: 2px;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.qa-section ul {
+    margin: 30px 0;
+}
+
+.qa-section li {
+    list-style: none;
+    text-align: left;
+    padding: 10px;
+    letter-spacing: 2px;
+    font-size: 2em;
+}
+
+.qa-section li:nth-last-child(even) {
+    font-weight: bold;
+}
+
+.contact-section {
+    border-bottom: none;
+}
+
+.contact {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 2em;
+    font-weight: bold;
+    margin: 5px;
+}
+
+.email {
+    font-weight: 300;
+    font-size: 1.6em;
+    margin: 5px;
+    text-align: center;
+}
+
+@media (max-width: 375px) {
+    .about-section,
+    .services-section,
+    .qa-section,
+    .contact-section {
+    position: relative;
+    height: auto;
+    width: 100%;
+    max-width: 375px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto 50px auto;
+    color: #444;
+    border-bottom: 1px solid rgba(68, 68, 68, 0.3);
+    }
+}
+
+@media (max-width: 500px) {
+    .slide {
+        bottom: -300px;
+        left: 0;
+        width: 100%;
+    }
+
+    .slide.current .content {
+        transform: translateY(-300px);
+    }
+
+
+}
