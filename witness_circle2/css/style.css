@@ -200,6 +200,11 @@ button#prev {
   box-shadow: 10px 10px 16px -7px rgba(0,0,0,0.45);
   -webkit-box-shadow: 10px 10px 16px -7px rgba(0,0,0,0.45);
   -moz-box-shadow: 10px 10px 16px -7px rgba(0,0,0,0.45);
+  font-size: 18px;
+}
+
+.card h2 {
+    opacity: .9;
 }
 
 /*----------------------------------------------*/
