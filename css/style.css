@@ -597,3 +597,35 @@ opacity: .8;
 
 
 }
+
+/*Social Buttons */
+
+.social-icon ul li {
+  display: inline-block;
+  list-style: none;
+  float: left;
+}
+
+.fa {
+	padding:20px;
+	font-size: 30px;
+	width:60px;
+	text-align: center;
+	text-decoration: none;
+	margin: 5px 2px;
+	border-radius: 50%;
+}
+
+.fa: hover {
+	opacity: 0.7;
+}
+
+.fa-facebook {
+	background: #3A5CA9;
+	color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
