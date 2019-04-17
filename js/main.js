@@ -5,6 +5,7 @@ const auto = true;
 const intervalTime = 3000;
 let slideInterval;
 
+
 const nextSlide = () => {
     // get current class
     const current = document.querySelector('.current');
@@ -67,20 +68,18 @@ if (auto) {
 
 
 // Menu
+var navbar = $(".menu");
+var sticky = navbar.offsetTop;
 
-var menu = document.getElementById("menu-title");
-var close = document.getElementById("menu-close");
+console.log(navbar);
 
-/*
-menu.onclick = function hide() {
-    document.getElementById("menu-title").style.visibility = "hidden";
-    document.getElementById("menu-list").style.visibility = "visible";
+function stickyMenuBar() {
+  if (window.pageYOffset >= sticky) {
+    // navbar.classList.add("sticky")
+    navbar.addClass("sticky");
+  } else {
+    navbar.removeClass("sticky");
+  }
 }
-*/
 
-/*
-close.onclick = function show() {
-    document.getElementById("menu-title").style.visibility = "visible";
-    document.getElementById("menu-list").style.visibility = "hidden";
-}
-*/
+window.onscroll = function() {sticykMenuBar()};

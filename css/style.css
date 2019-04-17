@@ -173,6 +173,12 @@ button#prev {
     opacity: 1;
 }
 
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
 /*----------------------------------------------*/
 /*--------------- SERVICE CARDS  ---------------*/
 /*----------------------------------------------*/
@@ -191,21 +197,30 @@ button#prev {
 }
 
 .card {
-  padding: 15px;
+  padding: 15px 25px;
   width: 25%;
-  height: 35%;
-  background-color: white;
+  min-height: 35%;
+  background-color: #CAD3C8;
   background-image: cover;
   text-align: center;
   box-shadow: 10px 10px 16px -7px rgba(0,0,0,0.45);
   -webkit-box-shadow: 10px 10px 16px -7px rgba(0,0,0,0.45);
   -moz-box-shadow: 10px 10px 16px -7px rgba(0,0,0,0.45);
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .card h2 {
     opacity: .9;
 }
+
+/* .card-color {
+  background-color: #CAD3C8;
+  /* margin: auto 0; */
+  /* padding: 15px;
+  height: 76%; */
+/*} */
+
+
 
 /*----------------------------------------------*/
 /*--------------- ABOUT SECTION  ---------------*/
@@ -217,7 +232,8 @@ button#prev {
 }
 
 #about-section {
-
+  font-size: 16px;
+  line-height: 1.6em;
 }
 
 #about-pic {
@@ -225,7 +241,7 @@ button#prev {
   margin-left: 25px;
 }
 
-.body-div {
+.body-div, .hr-wrapper {
   padding: 0 120px;
 }
 
@@ -326,45 +342,6 @@ button#prev {
 
 */
 
-
-=======
-*/
-@media (max-width: 375px) {
-    .about-section,
-    .services-section,
-    #qa-section,
-    .contact-section {
-    position: relative;
-    height: auto;
-    width: 100%;
-    max-width: 375px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    margin: 20px auto 50px auto;
-    color: #444;
-    border-bottom: 1px solid rgba(68, 68, 68, 0.3);
-    }
-}
-
-@media (max-width: 500px) {
-    .slide {
-        bottom: -300px;
-        left: 0;
-        width: 100%;
-    }
-
-    .slide.current .content {
-        transform: translateY(-300px);
-    }
-
-
-}
-
-
-
 /*New Q/A Section */
 
 #qa h3 {
@@ -383,7 +360,7 @@ button#prev {
   list-style: none;
   text-align: left;
   padding: 10px;
-  font-size: 20px;
+  font-size: 16px;
 }
 
 li:nth-child(odd) {
@@ -404,6 +381,7 @@ li:nth-child(odd) {
 }
 
 
+
 /*----------------------------------------------*/
 /*--------------- CONTACT SECTION  -------------*/
 /*----------------------------------------------*/
@@ -412,7 +390,9 @@ li:nth-child(odd) {
   color: #666666;
 } */
 .btn {
-  background-color: #03C4EB;
+  /* background-color: #03C4EB; */
+  background-color: white;
+  color: black;
 }
 
 .contactform-title {
@@ -445,7 +425,7 @@ li:nth-child(odd) {
 }
 
 #contact {
-  background: #f7f7f7;
+  background: #CAD3C8;
   padding: 80px 0;
   position: relative;
 }
@@ -454,9 +434,10 @@ li:nth-child(odd) {
   color: #333333;
 }
 
+/* Icons on left side of form */
 #contact .info i {
   font-size: 32px;
-  color: #03C4EB;
+  color: #2C3A47;
   float: left;
 }
 
@@ -576,4 +557,43 @@ padding: 5px 15px;
 #contact-submit:hover {
 cursor: pointer;
 opacity: .8;
+}
+
+/*----------------------------------------------*/
+/*--------------- Media Queries  ---------------*/
+/*----------------------------------------------*/
+=======
+*/
+@media (max-width: 375px) {
+    .about-section,
+    .services-section,
+    #qa-section,
+    .contact-section {
+    position: relative;
+    height: auto;
+    width: 100%;
+    max-width: 375px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto 50px auto;
+    color: #444;
+    border-bottom: 1px solid rgba(68, 68, 68, 0.3);
+    }
+}
+
+@media (max-width: 500px) {
+    .slide {
+        bottom: -300px;
+        left: 0;
+        width: 100%;
+    }
+
+    .slide.current .content {
+        transform: translateY(-300px);
+    }
+
+
 }
