@@ -406,7 +406,7 @@ button#prev {
 
 #qa li:nth-child(odd) {
   font-weight: bold;
-  opacity: 0.70;
+  opacity: 0.85;
 }
 .qa {
   position: relative;
