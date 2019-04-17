@@ -356,6 +356,7 @@ button#prev {
   font-size: 20px;
   font-weight: bold;
   opacity: .90;
+  padding-top: 15px;
 }
 
 #coaching h5 {
@@ -367,7 +368,18 @@ button#prev {
 }
 
 #coaching ul li {
+  text-align: left;
+  font-size: 14px;
+  font-weight: bold;
   list-style: none;
+  border-left: 2px solid #000000;
+  padding-left: 15px;
+}
+
+#coaching p {
+  margin: auto 40px;
+  font-size: 16px;
+  line-height: 1.6em;
 }
 
 
