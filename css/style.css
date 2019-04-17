@@ -225,8 +225,8 @@ button#prev {
   margin-left: 25px;
 }
 
-.body-div, .body-div + hr {
-  padding: 0 70px;
+.body-div {
+  padding: 0 120px;
 }
 
 
