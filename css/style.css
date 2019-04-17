@@ -342,6 +342,35 @@ button#prev {
 
 */
 
+/* Coaching Section */
+
+#coaching h3 {
+  text-align: center;
+  font-size: 32px;
+  font-weight: bold;
+  opacity: .90;
+}
+
+#coaching h4 {
+  text-align: left;
+  font-size: 20px;
+  font-weight: bold;
+  opacity: .90;
+}
+
+#coaching h5 {
+  padding-top: 15px;
+  text-align: left;
+  font-size: 16px;
+  font-weight: bold;
+  opacity: .90;
+}
+
+#coaching ul li {
+  list-style: none;
+}
+
+
 /*New Q/A Section */
 
 #qa h3 {
@@ -363,7 +392,7 @@ button#prev {
   font-size: 16px;
 }
 
-li:nth-child(odd) {
+#qa li:nth-child(odd) {
   font-weight: bold;
   opacity: 0.70;
 }
