@@ -1,10 +1,11 @@
-/* * {
-    padding: 0;
+* {
+    /* padding: 0;
     margin: 0;
-    box-sizing: inherit;
-    font-family: 'Raleway', sans-serif;
+    box-sizing: inherit; */
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.4em;
 }
-
+/*
 body {
     box-sizing: border-box;
     height: 100%;
@@ -201,10 +202,13 @@ button#prev {
   -moz-box-shadow: 10px 10px 16px -7px rgba(0,0,0,0.45);
 }
 
+/*----------------------------------------------*/
+/*--------------- ABOUT SECTION  ---------------*/
+/*----------------------------------------------*/
 #about-wrapper {
   display: inline-flex;
   flex-wrap: nowrap;
-  padding: 25px;
+  /* padding: 25px; */
 }
 
 #about-section {
@@ -214,6 +218,10 @@ button#prev {
 #about-pic {
   align-self: flex-end;
   margin-left: 25px;
+}
+
+.body-div, .body-div + hr {
+  padding: 0 70px;
 }
 
 
@@ -319,7 +327,7 @@ button#prev {
 @media (max-width: 375px) {
     .about-section,
     .services-section,
-    .qa-section,
+    #qa-section,
     .contact-section {
     position: relative;
     height: auto;
@@ -354,18 +362,19 @@ button#prev {
 
 /*New Q/A Section */
 
-.qa h3 {
+#qa h3 {
   text-align: center;
   font-size: 32px;
   font-weight: bold;
   opacity: .70;
 }
 
-.qa ul {
+#qa ul {
   margin: 30px 0;
+  padding: 0;
 }
 
-.qa ul li {
+#qa ul li {
   list-style: none;
   text-align: left;
   padding: 10px;
