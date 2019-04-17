@@ -1,8 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
-
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,6 +8,10 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
     <link href="https://fonts.googleapis.com/css?family=Raleway:300,300i,400" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato|Montserrat:300|Roboto:300" rel="stylesheet">
+    <!-- Bootstrap CSS File -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Font Awesome CSS  -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -114,10 +115,115 @@
               <hr>
 
 
+              <!-- Contact Form Section -->
+              <section id="contact">
+                <div class="row">
+                  <div class="col-md-12">
+                    <h3 class="contactform-title">Contact Us</h3>
+                    <div class="contactform-title-divider"></div>
+                      <p class="contactform-description">I am available to meet with all couples and families to discuss your event. I make myself available throughout the process. We'll work together closely, meeting several times in the months before your wedding or event. Through listening in conversation, we will get to the root of your intention and create a unique celebration. And we’ll have fun doing it!
+                      <p class ="contactform-description"><em>Please complete the form below and we will get in touch with you within 48 hours.</em></p>
+                  </div>
+                </div>
 
+                <div class="row">
+                  <div class="col-md-3 col-md-push-2">
+                    <div class="info">
+                      <div>
+                        <i class="fas fa-map-marker-alt fa-2x"></i>
+                        <p class="contactform-p">Frederick Drive<br>Saratoga Springs, NY 12866</p>
+                      </div>
+
+                      <div>
+                        <i class="fas fa-envelope fa-2x"></i>
+                        <p class="contactform-p">jonathan@witnesscircle.com</p>
+                      </div>
+
+                      <div>
+                        <i class="fas fa-phone fa-2x"></i>
+                        <p class="contactform-p">(518) 290-0740</p>
+                      </div>
+
+                      <div>
+                        <i class="fab fa-twitter fa-2x"></i>
+                        <p class="contactform-p">@witnesscircle</p>
+                      </div>
+
+                    </div>
+                    </div>
+          <!-- Start Contact form input area -->
+                    <div class="col-md-5 col-md-push-2">
+                        <div class="form">
+                          <div id="errormessage"></div>
+                          <form id="contact-form"action="" method="post" >
+
+                    <div class="messages"></div>
+
+                    <div class="controls">
+
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label for="form_name">First name *</label>
+                            <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your first name *" required="required" data-error="Your first name is required.">
+                              <div class="help-block with-errors"></div>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label for="form_lastname">Last name *</label>
+                            <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Please enter your last name *" required="required" data-error="Your last name is required.">
+                              <div class="help-block with-errors"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label for="form_email">Email *</label>
+                            <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
+                              <div class="help-block with-errors"></div>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label for="form_phone">Phone</label>
+                            <input id="form_phone" type="tel" name="phone" class="form-control" placeholder="Please enter your 10 digit phone #">
+                              <div class="help-block with-errors"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-12">
+                        <div class="form-group">
+                          <label for="form_message">Message *</label>
+                            <textarea id="form_message" name="message" class="form-control" placeholder="Please enter your message for me *" rows="4" required="required" data-error="Please,leave us a message."></textarea>
+                              <div class="help-block with-errors"></div>
+                        </div>
+                      </div>
+                      <div class="col-md-12">
+                        <button type="button" id="submit-msg"class="btn btn-primary">Send message</button>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-12">
+                        <p class="text-muted contactform-p"><strong>*</strong> Be sure to complete these fields! </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  </form>
+                    </div>
+                  </div>
+                  </div>
+                </section>
 
 
 
 <script src="js/main.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="js/contactform.js"></script>
 
 </html>

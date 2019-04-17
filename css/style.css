@@ -402,3 +402,178 @@ li:nth-child(odd) {
   justify-content: center;
   margin: 20px auto 20px auto;
 }
+
+
+/*----------------------------------------------*/
+/*--------------- CONTACT SECTION  -------------*/
+/*----------------------------------------------*/
+/* body {
+  background: #fff;
+  color: #666666;
+} */
+.btn {
+  background-color: #03C4EB;
+}
+
+.contactform-title {
+  font-size: 32px;
+  color: #111;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 700;
+}
+
+.contactform-description {
+  text-align: center;
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-bottom: 40px;
+}
+
+.contactform-title-divider {
+  text-align: center;
+  width: 50px;
+  height: 3px;
+  background: #03C4EB;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.contactform-p {
+  padding: 0;
+  margin: 0 0 30px 0;
+}
+
+#contact {
+  background: #f7f7f7;
+  padding: 80px 0;
+  position: relative;
+}
+
+#contact .info {
+  color: #333333;
+}
+
+#contact .info i {
+  font-size: 32px;
+  color: #03C4EB;
+  float: left;
+}
+
+#contact .info p {
+  padding: 0 0 10px 50px;
+  line-height: 24px;
+}
+
+ #contact .form #sendmessage {
+  color: #03C4EB;
+  border: 1px solid #03C4EB;
+  display: none;
+  text-align: center;
+  padding: 15px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+#contact .form #errormessage {
+  color: red;
+  display: none;
+  border: 1px solid red;
+  text-align: center;
+  padding: 15px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+#contact .form #sendmessage.show, #contact .form #errormessage.show, #contact .form .show {
+  display: block;
+}
+
+#contact .form .validation {
+  color: red;
+  display: none;
+  margin: 0 0 20px;
+  font-weight: 400;
+  font-size: 13px;
+}
+
+#contact .form input, #contact .form textarea {
+  border-radius: 0;
+  box-shadow: none;
+}
+
+#contact .form button[type="submit"] {
+  background: #03C4EB;
+  border: 0;
+  padding: 10px 24px;
+  color: #fff;
+  transition: 0.4s;
+}
+
+#contact .form button[type="submit"]:hover {
+  background: #25d8fc;
+}
+/* Color of Font Awesome icons */
+.fas .fab {
+  color: #03C4EB;
+}
+
+/* Modal styling */
+.modal-parent-container {
+  background: #666666;
+  width: 600px;
+  height: 800px;
+  position: relative;
+  opacity: .2;
+  top: 50%;
+  left: 50%;
+  margin: -70px 0 0 -170px;
+  display: flex;
+}
+
+#successmsgdiv {
+padding: 20px;
+width: 1000px;
+height: 500px;
+
+/* margin: 0 auto;
+margin-top: 40px; */
+background: white;
+border-radius: 5px;
+position: absolute;
+/* top: 40px;
+left: 100px; */
+top: 20%;
+left: 20%;
+margin: -70px 0 0 -170px;
+display: none;
+}
+
+#successmsgbtn {
+display: inline-block;
+background-color:#03C4EB;
+color:#ffffff;
+border-radius: 5px;
+text-align:center;
+margin-top:2px;
+padding: 5px 15px;
+}
+
+#successmsgbtn:hover {
+cursor: pointer;
+opacity: .8;
+}
+#contact-submit {
+display: inline-block;
+background-color:#03C4EB;
+color:#ffffff;
+border-radius: 5px;
+text-align:center;
+margin-top:1px;
+padding: 5px 15px;
+}
+
+#contact-submit:hover {
+cursor: pointer;
+opacity: .8;
+}
