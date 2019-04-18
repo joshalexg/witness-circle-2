@@ -643,14 +643,21 @@ opacity: .8;
 
 /*Social Buttons */
 
-.social-icon ul li {
+.social-icon ul {
+  text-align: center;
+
+}
+
+.social-icon li {
   display: inline-block;
   list-style: none;
-  float: left;
+  float: center;
+  padding-left: 15px;
+  padding-top: 15px;
 }
 
 .fa {
-	padding:20px;
+	padding: 20px;
 	font-size: 30px;
 	width:60px;
 	text-align: center;
