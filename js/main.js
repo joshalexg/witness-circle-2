@@ -73,27 +73,14 @@ const menuPos = $(".menu").position();
   $(window).scroll( function() {
     stickyMenuBar($(".menu"), menuPos)
   });
-  //console.log(stickyMenuBar());
 
-  // var navbar = $(".menu");
-  //var navbar = document.querySelector(".menu");
-  //var sticky = navbar.offsetTop;
-
-//  console.log(navbar);
-  //console.log(sticky);
 
   function stickyMenuBar(navbar, pos) {
-    //console.log($(window).scrollTop());
-    //console.log(pos);
-    // if (window.pageYOffset >= sticky) {
+
     if ($(window).scrollTop() >= pos.top) {
-      // navbar.classList.add("sticky")
       navbar.addClass("sticky");
-      //navbar.style.background
-      //console.log("It's sticky");
     } else {
       navbar.removeClass("sticky");
-      //console.log("It's not sticky anymore");
     }
   }
 
