@@ -645,6 +645,10 @@ opacity: .8;
       flex-direction: column;
     }
 
+    .serv-cards {
+      width: 90%;
+    }
+
 
 }
 
