@@ -643,6 +643,7 @@ opacity: .8;
       display: inline-flex;
       width: 100%;
       flex-direction: column;
+      align-content: space-around;
     }
 
     .serv-cards {
