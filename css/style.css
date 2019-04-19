@@ -198,7 +198,7 @@ button#prev {
   color: #4b4b4b;
 }
 
-.card {
+.serv-cards {
   padding: 15px 25px;
   width: 25%;
   min-height: 35%;
@@ -211,7 +211,7 @@ button#prev {
   font-size: 16px;
 }
 
-.card h2 {
+.serv-cards h2 {
     opacity: .9;
 }
 
@@ -451,6 +451,7 @@ button#prev {
   margin-left: 15%;
   margin-right: 15%;
   margin-bottom: 40px;
+  font-size: 16px;
 }
 
 .contactform-title-divider {
@@ -636,6 +637,12 @@ opacity: .8;
 
     .slide.current .content {
         transform: translateY(-300px);
+    }
+
+    #service-container-wrapper {
+      display: inline-flex;
+      width: 100%;
+      flex-direction: column;
     }
 
 
