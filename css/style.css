@@ -179,6 +179,10 @@ button#prev {
   width: 100%;
   background-color: white;
   z-index: 1;
+  transition: all 1s ease;
+  transform:translate(0, 0);
+  opacity: 0.9;
+  height: 60px;
 }
 
 /*----------------------------------------------*/
@@ -603,6 +607,46 @@ cursor: pointer;
 opacity: .8;
 }
 
+
+/*Social Buttons */
+
+.social-icon ul {
+  text-align: center;
+
+}
+
+.social-icon li {
+  display: inline-block;
+  list-style: none;
+  float: center;
+  padding-left: 15px;
+  padding-top: 15px;
+}
+
+.fa {
+	padding: 20px;
+	font-size: 30px;
+	width:60px;
+	text-align: center;
+	text-decoration: none;
+	margin: 5px 2px;
+	border-radius: 50%;
+}
+
+.fa: hover {
+	opacity: 0.7;
+}
+
+.fa-facebook {
+	background: #3A5CA9;
+	color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
 /*----------------------------------------------*/
 /*--------------- Media Queries  ---------------*/
 /*----------------------------------------------*/
@@ -651,43 +695,4 @@ opacity: .8;
     }
 
 
-}
-
-/*Social Buttons */
-
-.social-icon ul {
-  text-align: center;
-
-}
-
-.social-icon li {
-  display: inline-block;
-  list-style: none;
-  float: center;
-  padding-left: 15px;
-  padding-top: 15px;
-}
-
-.fa {
-	padding: 20px;
-	font-size: 30px;
-	width:60px;
-	text-align: center;
-	text-decoration: none;
-	margin: 5px 2px;
-	border-radius: 50%;
-}
-
-.fa: hover {
-	opacity: 0.7;
-}
-
-.fa-facebook {
-	background: #3A5CA9;
-	color: white;
-}
-
-.fa-twitter {
-  background: #55ACEE;
-  color: white;
 }

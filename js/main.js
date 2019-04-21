@@ -1,4 +1,7 @@
 $(document).ready( function() {
+const menuPos = $(".menu").position();
+stickyMenuBar($(".menu"), menuPos);
+// $(".menu").removeClass("sticky");
 
   const slides = document.querySelectorAll('.slide');
   const next = document.querySelector('#next');
@@ -67,7 +70,7 @@ $(document).ready( function() {
   }
 
 
-const menuPos = $(".menu").position();
+ // const menuPos = $(".menu").position();
 
   // Menu
   $(window).scroll( function() {
@@ -76,10 +79,13 @@ const menuPos = $(".menu").position();
 
 
   function stickyMenuBar(navbar, pos) {
-
+    // if the position of the menu hits the top of the page when scrolling down
     if ($(window).scrollTop() >= pos.top) {
+      console.log($(window).scrollTop());
       navbar.addClass("sticky");
-    } else {
+    }
+    // if the scroll happens above the the position of the menu
+    else {
       navbar.removeClass("sticky");
     }
   }
