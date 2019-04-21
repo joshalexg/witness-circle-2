@@ -1,7 +1,7 @@
 $(document).ready( function() {
-const menuPos = $(".menu").position();
-stickyMenuBar($(".menu"), menuPos);
-// $(".menu").removeClass("sticky");
+
+  const menuPos = $(".menu").position();
+  stickyMenuBar($(".menu"), menuPos);
 
   const slides = document.querySelectorAll('.slide');
   const next = document.querySelector('#next');

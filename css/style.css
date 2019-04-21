@@ -683,6 +683,12 @@ opacity: .8;
         transform: translateY(-300px);
     }
 
+    .menu {
+        position: relative;
+        /* display: inline; */
+        white-space: nowrap;
+    }
+
     #service-container-wrapper {
       display: inline-flex;
       width: 100%;
@@ -694,5 +700,24 @@ opacity: .8;
       width: 90%;
     }
 
+    .body-div, .hr-wrapper {
+      padding: 0 10px;
+    }
+
+/* adjust the wrapper so it allows wrap */
+    #about-wrapper {
+      display: flex;
+      flex-direction: column;
+    }
+
+    #about-texts {
+      display: block;
+    }
+
+    #about-pic {
+      /* align-self: flex-end; */
+      width: 90%;
+      display: block;
+    }
 
 }
