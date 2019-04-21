@@ -698,6 +698,7 @@ opacity: .8;
 
     .serv-cards {
       width: 90%;
+      margin-bottom: 15px;
     }
 
     .body-div, .hr-wrapper {
@@ -718,6 +719,19 @@ opacity: .8;
       /* align-self: flex-end; */
       width: 90%;
       display: block;
+    }
+
+    .slide:first-child {  
+      max-width: 100%;
+    }
+    .slide:nth-child(2) {
+      max-width: 100%;
+    }
+    .slide:nth-child(3) {
+      max-width: 100%;
+    }
+    .slide:nth-child(4) {
+      max-width: 100%;
     }
 
 }
