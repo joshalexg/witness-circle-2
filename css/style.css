@@ -181,8 +181,12 @@ button#prev {
   z-index: 1;
   transition: all 1s ease;
   transform:translate(0, 0);
-  opacity: 0.9;
+  opacity: 0.95;
   height: 60px;
+  box-shadow: 10px 10px 16px -7px rgba(0,0,0,0.25);
+  -webkit-box-shadow: 10px 10px 16px -7px rgba(0,0,0,0.25);
+  -moz-box-shadow: 10px 10px 16px -7px rgba(0,0,0,0.25);
+
 }
 
 /*----------------------------------------------*/
@@ -195,7 +199,7 @@ button#prev {
   padding: 20px 0 40px 0;
 }
 
-#service-container-wrapper h2 {
+.card-title {
   display: block;
   text-align: center;
   font-family: 'Merriweather', serif;
@@ -348,7 +352,9 @@ button#prev {
 
 */
 
-/* Coaching Section */
+/*----------------------------------------------*/
+/*--------------- COACHING SECTION  ------------*/
+/*----------------------------------------------*/
 
 #coaching h3 {
   text-align: center;
@@ -389,7 +395,9 @@ button#prev {
 }
 
 
-/*New Q/A Section */
+/*----------------------------------------------*/
+/*----------------- Q&A SECTION  ---------------*/
+/*----------------------------------------------*/
 
 #qa h3 {
   text-align: center;
@@ -406,13 +414,15 @@ button#prev {
 #qa ul li {
   list-style: none;
   text-align: left;
-  padding: 10px;
+  padding: 0px;
   font-size: 16px;
+  line-height: 1.6em;
 }
 
-#qa li:nth-child(odd) {
+#qa li:nth-child(even) {
   font-weight: bold;
   opacity: 0.85;
+  margin-bottom: 10px;
 }
 .qa {
   position: relative;
@@ -432,10 +442,7 @@ button#prev {
 /*----------------------------------------------*/
 /*--------------- CONTACT SECTION  -------------*/
 /*----------------------------------------------*/
-/* body {
-  background: #fff;
-  color: #666666;
-} */
+
 .btn {
   /* background-color: #03C4EB; */
   background-color: white;
@@ -608,7 +615,9 @@ opacity: .8;
 }
 
 
-/*Social Buttons */
+/*----------------------------------------------*/
+/*------------ SOCIAL MEDIA BUTTONS  -----------*/
+/*----------------------------------------------*/
 
 .social-icon ul {
   text-align: center;
@@ -650,8 +659,7 @@ opacity: .8;
 /*----------------------------------------------*/
 /*--------------- Media Queries  ---------------*/
 /*----------------------------------------------*/
-=======
-*/
+
 @media (max-width: 375px) {
     .about-section,
     .services-section,
@@ -711,7 +719,6 @@ opacity: .8;
       padding: 0 10px;
     }
 
-/* adjust the wrapper so it allows wrap */
     #about-wrapper {
       display: flex;
       flex-direction: column;
@@ -722,22 +729,26 @@ opacity: .8;
     }
 
     #about-pic {
-      /* align-self: flex-end; */
-      width: 90%;
+      align-self: center;
+      width: 60%;
       display: block;
     }
 
-    .slide:first-child {
-      max-width: 100%;
+    .sticky {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      /* background-color: white; */
+      z-index: 1;
+      transition: all 1s ease;
+      transform:translate(0, 0);
+      opacity: 0.95;
+      /* height: 60px; */
+      box-shadow: 10px 10px 16px -7px rgba(0,0,0,0.25);
+      -webkit-box-shadow: 10px 10px 16px -7px rgba(0,0,0,0.25);
+      -moz-box-shadow: 10px 10px 16px -7px rgba(0,0,0,0.25);
+
     }
-    .slide:nth-child(2) {
-      max-width: 100%;
-    }
-    .slide:nth-child(3) {
-      max-width: 100%;
-    }
-    .slide:nth-child(4) {
-      max-width: 100%;
-    }
+
 
 }
