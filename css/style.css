@@ -644,6 +644,18 @@ opacity: .8;
 .fab: hover {
 	opacity: 0.7;
 }
+.fas {
+	padding: 20px;
+	font-size: 30px;
+	text-align: center;
+	text-decoration: none;
+	margin: 5px 2px;
+	border-radius: 50%;
+}
+
+.fas: hover {
+	opacity: 0.7;
+}
 
 .fa-facebook {
 	background: #3A5CA9;
@@ -652,6 +664,14 @@ opacity: .8;
 
 .fa-twitter {
   background: #55ACEE;
+  color: white;
+}
+.fa-map-marker-alt {
+  background: #FF2D00;
+  color: white;
+}
+.fa-phone {
+  background: #C600FF;
   color: white;
 }
 
