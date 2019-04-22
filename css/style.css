@@ -672,7 +672,12 @@ opacity: .8;
     }
 }
 
-@media (max-width: 500px) {
+/* @media (max-width: 500px) { */
+@media only screen
+  and (min-device-width: 414px)
+  and (max-device-width: 736px)
+  and (-webkit-min-device-pixel-ratio: 3) {
+
     .slide {
         bottom: -300px;
         left: 0;
@@ -694,6 +699,7 @@ opacity: .8;
       width: 100%;
       flex-direction: column;
       align-content: space-around;
+      padding: 0;
     }
 
     .serv-cards {
@@ -721,7 +727,7 @@ opacity: .8;
       display: block;
     }
 
-    .slide:first-child {  
+    .slide:first-child {
       max-width: 100%;
     }
     .slide:nth-child(2) {
