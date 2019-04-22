@@ -15,6 +15,7 @@
 }
 
 .contact-form {
+  height: auto;
   max-width: 700px;
   margin: 0 auto;
   background:rgb(195, 205, 193);
@@ -26,6 +27,16 @@
   display: flex;
   box-shadow: 0 0 10px;
   border-radius: 20px;
+}
+
+.contact-form h3{
+  color: #ffffff;
+  border-bottom: 2px solid #ffffff;
+}
+
+.contact-form p {
+  padding-top: 10px;
+  color: #ffffff;
 }
 
 .input-fields {

@@ -632,17 +632,16 @@ opacity: .8;
   padding-top: 15px;
 }
 
-.fa {
+.fab {
 	padding: 20px;
 	font-size: 30px;
-	width:60px;
 	text-align: center;
 	text-decoration: none;
 	margin: 5px 2px;
 	border-radius: 50%;
 }
 
-.fa: hover {
+.fab: hover {
 	opacity: 0.7;
 }
 
