@@ -61,6 +61,7 @@ body {
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
+    max-width: 100%;
 }
 
 .slide:nth-child(2) {
