@@ -61,6 +61,7 @@ body {
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
+    max-width: 100%;
 }
 
 .slide:nth-child(2) {
@@ -641,7 +642,7 @@ opacity: .8;
 	border-radius: 50%;
 }
 
-.fab: hover {
+.fab: hover, .fas: hover {
 	opacity: 0.7;
 }
 .fas {
@@ -653,10 +654,6 @@ opacity: .8;
 	border-radius: 50%;
 }
 
-.fas: hover {
-	opacity: 0.7;
-}
-
 .fa-facebook {
 	background: #3A5CA9;
 	color: white;
@@ -666,7 +663,7 @@ opacity: .8;
   background: #55ACEE;
   color: white;
 }
-.fa-map-marker-alt {
+.fa-street-view {
   background: #FF2D00;
   color: white;
 }
