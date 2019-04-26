@@ -194,10 +194,12 @@ button#prev {
 /*--------------- SERVICE CARDS  ---------------*/
 /*----------------------------------------------*/
 #service-container-wrapper {
-  display: inline-flex;
+  display: flex;
+  flex-direction: row;
   width: 100%;
   justify-content: space-around;
   padding: 20px 0 40px 0;
+  flex-wrap: wrap;
 }
 
 .card-title {
@@ -719,7 +721,7 @@ opacity: .8;
     }
 
     #service-container-wrapper {
-      display: inline-flex;
+      display: flex;
       width: 100%;
       flex-direction: column;
       align-content: space-around;
