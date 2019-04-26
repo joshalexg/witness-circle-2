@@ -111,6 +111,13 @@ $(document).ready( function() {
             button: "Close",
           });
       } else {
+        // Clear input fields
+        $("#form_name").val('');
+        $("#form_lastname").val('');
+        $("#form_email").val('');
+        $("#form_phone").val('');
+        $("#form_message").val('');
+
         swal({
           title: "Awesome, thanks!",
           text: "We look forward to speaking with you!",
@@ -118,12 +125,6 @@ $(document).ready( function() {
           button: "Close",
         });
       }
-      // Clear input fields
-      $("#form_name").val('');
-      $("#form_lastname").val('');
-      $("#form_email").val('');
-      $("#form_phone").val('');
-      $("#form_message").val('');
 
     });
 
