@@ -442,7 +442,9 @@ button#prev {
   justify-content: center;
   margin: 20px auto 20px auto;
 }
-
+[data-toggle~="collapse"] {
+    cursor: pointer;
+}
 
 
 /*----------------------------------------------*/
