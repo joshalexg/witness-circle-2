@@ -101,7 +101,7 @@ $(document).ready( function() {
       var message = $("#form_message").val();
 
       // Check for empty fields of required info
-      if (firstName == '' || lastName == '' || message == '') {
+      if (firstName == '' || lastName == '' || email == '' ||message == '') {
 
       // Define Alerts
         swal({
