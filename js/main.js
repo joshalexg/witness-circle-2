@@ -91,41 +91,82 @@ $(document).ready( function() {
   }
 
     // -----Contact Form-----
-    $("#submit-msg").click(function () {
+    $.validator.setDefaults({
+		submitHandler: function() {
+      swal({
+        title: "Awesome, thanks!",
+        text: "We look forward to speaking with you!",
+        icon: "success",
+        button: "Close",
+      });
+		}
+	});
+// $(document).ready(function () {
 
-      // Declare variables used for simple form validation
-      var firstName = $("#form_name").val();
-      var lastName = $("#form_lastname").val();
-      var eMail = $("#form_email").val();
-      var phoneNo = $("#form_phone").val();
-      var message = $("#form_message").val();
+    $('#contact-form').validate({
+        rules: {
+            name: {
+                minlength: 2,
+                required: true
+            },
+            surname: {
+                minlength: 2,
+                required: true
+            },
+            email: {
+                required: true,
+                email: true
+            },
+            message: {
+                minlength: 2,
+                required: true
+            }
+        },
+        highlight: function (element) {
+            $(element).closest('.control-group').removeClass('success').addClass('error');
+        },
+        success: function (element) {
+            element.text('okay!').addClass('valid')
+                .closest('.control-group').removeClass('error').addClass('success');
 
-      // Check for empty fields of required info
-      if (firstName == '' || lastName == '' || eMail == '' ||message == '') {
-
-      // Define Alerts
-        swal({
-            title: "Oops!",
-            text: "Please complete the required fields so we can contact you",
-            icon: "warning",
-            button: "Close",
-          });
-      } else {
-        // Clear input fields
-        $("#form_name").val('');
-        $("#form_lastname").val('');
-        $("#form_email").val('');
-        $("#form_phone").val('');
-        $("#form_message").val('');
-
-        swal({
-          title: "Awesome, thanks!",
-          text: "We look forward to speaking with you!",
-          icon: "success",
-          button: "Close",
-        });
-      }
+        }
 
     });
+    // $("#submit-msg").click(function () {
+    //
+    //   // Declare variables used for simple form validation
+    //   var firstName = $("#form_name").val();
+    //   var lastName = $("#form_lastname").val();
+    //   var eMail = $("#form_email").val();
+    //   var phoneNo = $("#form_phone").val();
+    //   var message = $("#form_message").val();
+    //
+    //   // Check for empty fields of required info
+    //   if (firstName == '' || lastName == '' || eMail == '' ||message == '') {
+    //
+    //   // Define Alerts
+    //     swal({
+    //         title: "Oops!",
+    //         text: "Please complete the required fields so we can contact you",
+    //         icon: "warning",
+    //         button: "Close",
+    //       });
+    //   } else {
+    //     // Clear input fields
+    //     $("#form_name").val('');
+    //     $("#form_lastname").val('');
+    //     $("#form_email").val('');
+    //     $("#form_phone").val('');
+    //     $("#form_message").val('');
+    //
+    //     swal({
+    //       title: "Awesome, thanks!",
+    //       text: "We look forward to speaking with you!",
+    //       icon: "success",
+    //       button: "Close",
+    //     });
+    //   }
+    //
+    // });
 
 })

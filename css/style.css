@@ -521,55 +521,10 @@ button#prev {
   background: #25d8fc;
 }
 /* Color of Font Awesome icons */
-.fas .fab {
+/* .fas .fab {
   color: #03C4EB;
-}
+} */
 
-/* Modal styling */
-.modal-parent-container {
-  background: #666666;
-  width: 600px;
-  height: 800px;
-  position: relative;
-  opacity: .2;
-  top: 50%;
-  left: 50%;
-  margin: -70px 0 0 -170px;
-  display: flex;
-}
-
-#successmsgdiv {
-padding: 20px;
-width: 1000px;
-height: 500px;
-
-/* margin: 0 auto;
-margin-top: 40px; */
-background: white;
-border-radius: 5px;
-position: absolute;
-/* top: 40px;
-left: 100px; */
-top: 20%;
-left: 20%;
-margin: -70px 0 0 -170px;
-display: none;
-}
-
-#successmsgbtn {
-display: inline-block;
-background-color:#03C4EB;
-color:#ffffff;
-border-radius: 5px;
-text-align:center;
-margin-top:2px;
-padding: 5px 15px;
-}
-
-#successmsgbtn:hover {
-cursor: pointer;
-opacity: .8;
-}
 #contact-submit {
 display: inline-block;
 background-color:#03C4EB;
@@ -584,7 +539,14 @@ padding: 5px 15px;
 cursor: pointer;
 opacity: .8;
 }
-
+.error {
+  color: red;
+  font-weight: bolder;
+}
+.valid {
+  color: green;
+  font-weight: bolder;
+}
 
 /*----------------------------------------------*/
 /*------------ SOCIAL MEDIA BUTTONS  -----------*/
