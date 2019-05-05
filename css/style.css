@@ -12,6 +12,9 @@ body {
     font-size: 10px;
 } */
 
+.body-div {
+  padding: 0 120px;
+}
 /*----------------------------------------------*/
 /*------------------- LOGO ---------------------*/
 /*----------------------------------------------*/
@@ -128,7 +131,7 @@ button#prev {
     position: relative;
 }
 
-#menu-title {
+/*#menu-title {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -147,7 +150,7 @@ button#prev {
 
 #menu-title:hover {
     opacity: 1;
-}
+}*/
 
 
 .menu ul {
@@ -193,16 +196,29 @@ button#prev {
 
 }
 
+@media (max-width: 375px) {
+  .menu a {
+    font-size: 10px;
+  }
+
+  .hr-wrapper {
+    padding: 0 90px;
+  }
+
+}
+
 /*----------------------------------------------*/
 /*--------------- SERVICE CARDS  ---------------*/
 /*----------------------------------------------*/
 #service-container-wrapper {
+  /*add in*/position: relative;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
+  /*add in*/align-items: center;
   width: 100%;
   justify-content: space-around;
   padding: 20px 0 40px 0;
-  flex-wrap: wrap;
 }
 
 .card-title {
@@ -228,6 +244,23 @@ button#prev {
 .serv-cards h2 {
     opacity: .9;
 }
+
+@media (max-width: 375px) {
+  #service-container-wrapper {
+    flex-direction: column;
+    padding: 20px 0 40px 0;
+  }
+.serv-cards {
+  width: 75%;
+  margin: 15px 25px;
+}
+
+.hr-wrapper {
+  padding: 0 90px;
+}
+
+}
+
 
 /* .card-color {
   background-color: #CAD3C8;
@@ -257,10 +290,28 @@ button#prev {
   margin-left: 25px;
 }
 
-.body-div, .hr-wrapper {
+.hr-wrapper {
   padding: 0 120px;
 }
 
+@media (max-width:375px) {
+  #about-wrapper {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  #about-pic {
+    align-items: center;
+    margin-left: 10px;
+  }
+
+  .hr-wrapper {
+    padding: 0 90px;
+  }
+
+}
 
 /*
 .about-section,
@@ -400,6 +451,11 @@ button#prev {
   line-height: 1.6em;
 }
 
+@media (max-width:375px) {
+  .body-div {
+    padding: 0 50px;
+  }
+}
 
 /*----------------------------------------------*/
 /*----------------- Q&A SECTION  ---------------*/
@@ -486,7 +542,7 @@ button#prev {
 }
 
 .contactform-description {
-  text-align: center;
+  text-align: justify;
   margin-left: 15%;
   margin-right: 15%;
   margin-bottom: 40px;
@@ -587,28 +643,38 @@ opacity: .8;
 }
 
 .fa-facebook {
-	background: #3A5CA9;
+	background: #CAD3C8;
 	color: white;
 }
 
 .fa-twitter {
-  background: #55ACEE;
+  background: #CAD3C8;
   color: white;
 }
 .fa-street-view {
-  background: #FF2D00;
+  background: #CAD3C8;
   color: white;
 }
 .fa-phone {
-  background: #C600FF;
+  background: #CAD3C8;
   color: white;
+}
+
+@media (max-width: 375px) {
+  .fab {
+    font-size: 20px;
+  }
+  .fas {
+    font-size: 20px;
+  }
+
 }
 
 /*----------------------------------------------*/
 /*--------------- Media Queries  ---------------*/
 /*----------------------------------------------*/
 
-@media (max-width: 375px) {
+/*@media (max-width: 375px) {
     .about-section,
     .services-section,
     #qa-section,
@@ -626,7 +692,10 @@ opacity: .8;
     color: #444;
     border-bottom: 1px solid rgba(68, 68, 68, 0.3);
     }
-}
+    .menu a {
+    font-size: 1.1em;
+  }
+}*/
 
 /* @media (max-width: 500px) { */
 @media only screen
