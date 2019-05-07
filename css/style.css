@@ -91,6 +91,60 @@ body {
     max-width: 100%;
 }
 
+@media (max-width: 414px) {
+  .slider {
+      height: 500px;
+      position: relative;
+      width: 100%;
+      overflow: hidden;
+  }
+
+  .slide {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      transition: opacity 0.4s ease-in-out;
+  }
+
+  .slide.current {
+      opacity: 1;
+  }
+
+  .slide:first-child {
+      background-image: url(../img/adult-bridal-bride-1043902.jpg);
+      background-position: center;
+      background-size: cover;
+      /*background-attachment: fixed;*/
+      max-width: 100%;
+  }
+
+  .slide:nth-child(2) {
+      background-image: url(../img/riteofpassage.jpg);
+      background-position: center;
+      background-size: cover;
+      /*background-attachment: fixed;*/
+      max-width: 100%;
+  }
+
+  .slide:nth-child(3) {
+      background-image: url(../img/coachingnew.jpg);
+      background-position: center;
+      background-size: cover;
+      /*background-attachment: fixed;*/
+      max-width: 100%;
+  }
+
+  .slide:nth-child(4) {
+      background-image: url(../img/celebration-craft-creative-949586.jpg);
+      background-position: center;
+      background-size: cover;
+      /*background-attachment: fixed;*/
+      max-width: 100%;
+  }
+}
 /*----------------------------------------------*/
 /*---------------- SLIDER BUTTONS --------------*/
 /*----------------------------------------------*/
