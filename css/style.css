@@ -196,7 +196,7 @@ button#prev {
 
 }
 
-@media (max-width: 375px) {
+@media (max-width: 414px) {
   .menu a {
     font-size: 10px;
   }
@@ -206,6 +206,8 @@ button#prev {
   }
 
 }
+
+
 
 /*----------------------------------------------*/
 /*--------------- SERVICE CARDS  ---------------*/
@@ -239,19 +241,20 @@ button#prev {
   -webkit-box-shadow: 10px 10px 16px -7px rgba(0,0,0,0.45);
   -moz-box-shadow: 10px 10px 16px -7px rgba(0,0,0,0.45);
   font-size: 16px;
+  text-align: justify;
 }
 
 .serv-cards h2 {
     opacity: .9;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 414px) {
   #service-container-wrapper {
     flex-direction: column;
     padding: 20px 0 40px 0;
   }
 .serv-cards {
-  width: 75%;
+  width: 85%;
   margin: 15px 25px;
 }
 
@@ -283,6 +286,7 @@ button#prev {
 #about-section {
   font-size: 16px;
   line-height: 1.6em;
+  text-align: justify;
 }
 
 #about-pic {
@@ -294,7 +298,7 @@ button#prev {
   padding: 0 120px;
 }
 
-@media (max-width:375px) {
+@media (max-width:414px) {
   #about-wrapper {
     position: relative;
     display: flex;
@@ -451,9 +455,13 @@ button#prev {
   line-height: 1.6em;
 }
 
-@media (max-width:375px) {
+@media (max-width:414px) {
   .body-div {
     padding: 0 50px;
+  }
+
+  #coaching p {
+    text-align: justify;
   }
 }
 
@@ -660,7 +668,7 @@ opacity: .8;
   color: white;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 414px) {
   .fab {
     font-size: 20px;
   }
