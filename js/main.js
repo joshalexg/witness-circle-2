@@ -119,6 +119,10 @@ $(document).ready( function() {
                 required: true,
                 email: true
             },
+            phone: {
+               required: false,
+               phoneUS: true
+            },
             message: {
                 minlength: 2,
                 required: true
