@@ -210,8 +210,11 @@ button#prev {
   flex-wrap: wrap;
   flex-direction: row;
   /*add in*/align-items: center;
+  align-items: stretch;
   width: 100%;
-  justify-content: space-around;
+  /* justify-content: space-around; */
+  justify-content: space-evenly;
+
   padding: 20px 0 40px 0;
 }
 
@@ -223,7 +226,7 @@ button#prev {
 }
 
 .serv-cards {
-  padding: 15px 25px;
+  padding: 8px 25px 14px 25px;
   width: 25%;
   min-height: 35%;
   background-color: #CAD3C8;
