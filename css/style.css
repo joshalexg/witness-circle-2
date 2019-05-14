@@ -262,6 +262,11 @@ button#prev {
 /*----------------------------------------------*/
 /*--------------- ABOUT SECTION  ---------------*/
 /*----------------------------------------------*/
+#about {
+  font-size: 32px;
+  font-weight: bold;
+  opacity: .90;
+}
 
 #about-wrapper {
   display: inline-flex;
