@@ -32,6 +32,17 @@ body {
     height: 75px;
     width: 150px;
 }
+#tagline {
+  text-align: center;
+  /* font-family: 'Dancing Script', cursive; */
+  font-family: 'Nothing You Could Do', cursive;
+  font-size: 1.3em;
+  letter-spacing: .8px;
+  /* color: rgb(193, 133, 70); */
+  color: #444;
+  opacity: .8;
+  margin: 2px 0 6px 0;
+}
 
 
 /*----------------------------------------------*/
