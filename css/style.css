@@ -112,6 +112,7 @@
       background-position: center;
       background-size: cover;
       background-attachment: fixed;
+      height: 500px;
       max-width: 100%;
   }
 
@@ -120,6 +121,7 @@
       background-position: center;
       background-size: cover;
       background-attachment: fixed;
+      height: 500px;
       max-width: 100%;
   }
 
@@ -128,6 +130,7 @@
       background-position: center;
       background-size: cover;
       background-attachment: fixed;
+      height: 500px;
       max-width: 100%;
   }
 
@@ -136,6 +139,7 @@
       background-position: center;
       background-size: cover;
       background-attachment: fixed;
+      height: 500px;
       max-width: 100%;
   }
 }
@@ -163,6 +167,7 @@ button#prev {
     padding: 13px 15px;
     border-radius: 50%;
     outline: none;
+    visibility: hidden;
 }
 
 .buttons button:hover {
