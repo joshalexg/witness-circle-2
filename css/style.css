@@ -5,12 +5,6 @@
     font-family: 'Montserrat', sans-serif;
     line-height: 1.4em;
 }
-/*
-body {
-    box-sizing: border-box;
-    height: 100%;
-    font-size: 10px;
-} */
 
 .body-div {
   padding: 0 120px;
@@ -128,32 +122,36 @@ body {
       background-image: url(../img/adult-bridal-bride-1043902.jpg);
       background-position: center;
       background-size: cover;
-      /*background-attachment: fixed;*/
-      max-width: 100%;
+      background-attachment: fixed;
+      height: 500px;
+      width: 411px;
   }
 
   .slide:nth-child(2) {
       background-image: url(../img/riteofpassage.jpg);
       background-position: center;
       background-size: cover;
-      /*background-attachment: fixed;*/
-      max-width: 100%;
+      background-attachment: fixed;
+      height: 500px;
+      width: 411x;
   }
 
   .slide:nth-child(3) {
       background-image: url(../img/coachingnew.jpg);
       background-position: center;
       background-size: cover;
-      /*background-attachment: fixed;*/
-      max-width: 100%;
+      background-attachment: fixed;
+      height: 500px;
+      width: 411px;
   }
 
   .slide:nth-child(4) {
       background-image: url(../img/celebration-craft-creative-949586.jpg);
       background-position: center;
       background-size: cover;
-      /*background-attachment: fixed;*/
-      max-width: 100%;
+      background-attachment: fixed;
+      height: 500px;
+      width: 411px;
   }
 }
 /*----------------------------------------------*/
@@ -180,6 +178,7 @@ button#prev {
     padding: 13px 15px;
     border-radius: 50%;
     outline: none;
+    visibility: hidden;
 }
 
 .buttons button:hover {
@@ -195,27 +194,6 @@ button#prev {
     height: 100px;
     position: relative;
 }
-
-/*#menu-title {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    padding: 5px 15px;
-    font-size: 3em;
-    text-decoration: none;
-    color: #444;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    font-weight: 500;
-    border: 2px solid #444;
-    opacity: .7;
-    cursor: pointer;
-}
-
-#menu-title:hover {
-    opacity: 1;
-}*/
 
 
 .menu ul {
@@ -313,7 +291,7 @@ button#prev {
     opacity: .9;
 }
 
-@media (max-width: 414px) {
+@media (max-width: 900px) {
   #service-container-wrapper {
     flex-direction: column;
     padding: 20px 0 40px 0;
@@ -328,16 +306,6 @@ button#prev {
 }
 
 }
-
-
-/* .card-color {
-  background-color: #CAD3C8;
-  /* margin: auto 0; */
-  /* padding: 15px;
-  height: 76%; */
-/*} */
-
-
 
 /*----------------------------------------------*/
 /*--------------- ABOUT SECTION  ---------------*/
@@ -382,101 +350,24 @@ button#prev {
 
 }
 
-/*
-.about-section,
-.services-section,
-.qa-section,
-.contact-section {
+@media (min-width: 415px, max-width: 900px) {
+  #about-wrapper {
     position: relative;
-    height: auto;
-    width: 100%;
-    max-width: 700px;
     display: flex;
-    flex-direction: column;
     flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+  #about-pic {
     align-items: center;
-    justify-content: center;
-    margin: 20px auto 50px auto;
-    color: #444;
-    border-bottom: 1px solid rgba(68, 68, 68, 0.3);
+    margin-left: 10px;
+  }
+
+  .hr-wrapper {
+    padding: 0 90px;
+  }
+
 }
-
-.about-section span,
-.services-section span,
-.qa-section span {
-    text-transform: uppercase;
-    letter-spacing: 5px;
-    font-size: 2em;
-    font-weight: bold;
-}
-
-.about-section p,
-.services-section p,
-.qa-section p,
-.contact-section p {
-    text-align: left;
-    letter-spacing: 2px;
-    font-size: 1.6em;
-    padding: 50px 20px;
-    line-height: 25px;
-    text-indent: 25px;
-}
-
-.services-section ul {
-    margin-bottom: 30px;
-}
-
-.services-section li {
-    list-style: none;
-    text-align: center;
-    padding: 10px;
-    letter-spacing: 2px;
-    font-size: 2em;
-    font-weight: bold;
-}
-*/
-
-/* Original Q/A
-.qa-section ul {
-    margin: 30px 0;
-}
-
-.qa-section li {
-    list-style: none;
-    text-align: left;
-    padding: 10px;
-    letter-spacing: 2px;
-    font-size: 2em;
-}
-
-.qa-section li:nth-last-child(even) {
-    font-weight: bold;
-}
-
-*/
-
-/* Contact
-.contact-section {
-    border-bottom: none;
-}
-
-.contact {
-    text-transform: uppercase;
-    letter-spacing: 5px;
-    font-size: 2em;
-    font-weight: bold;
-    margin: 5px;
-}
-
-.email {
-    font-weight: 300;
-    font-size: 1.6em;
-    margin: 5px;
-    text-align: center;
-}
-<<<<<<< HEAD
-
-*/
 
 /*----------------------------------------------*/
 /*--------------- COACHING SECTION  ------------*/
