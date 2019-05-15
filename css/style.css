@@ -287,6 +287,7 @@ button#prev {
 
 .hr-wrapper {
   padding: 0 120px;
+  margin-bottom: 40px;
 }
 
 @media (max-width:414px) {
@@ -391,7 +392,8 @@ button#prev {
 }
 
 .qa-container {
-  max-width: 768px;
+  /* changes the width of the qa sections */
+  max-width: 900px;
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -436,18 +438,26 @@ button#prev {
   font-size: 16px;
 }
 
+
 /*----------------------------------------------*/
 /*--------------- CONTACT SECTION  -------------*/
 /*----------------------------------------------*/
-#contact {
+/* #contact {
+  
   background: #CAD3C8;
-  padding: 80px 0;
+  padding: 20px 0;
   position: relative;
-}
+  width: 90%;
+} */
+
 .contact-container {
-  max-width: 768px;
+  /* Alyssa's add-ins */
+  width: 90%;
+  background: #CAD3C8;
+  /*  */
+  /* max-width: 728px; */
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 30px;
 }
 .btn {
   /* background-color: #03C4EB; */
@@ -465,8 +475,8 @@ button#prev {
 
 .contactform-description {
   text-align: justify;
-  margin-left: 15%;
-  margin-right: 15%;
+  /* margin-left: 15%;
+  margin-right: 15%; */
   margin-bottom: 40px;
   font-size: 16px;
 }
@@ -555,6 +565,7 @@ opacity: .8;
 .fab: hover, .fas: hover {
 	opacity: 0.7;
 }
+
 .fas {
 	padding: 20px;
 	font-size: 30px;
@@ -564,12 +575,13 @@ opacity: .8;
 	border-radius: 50%;
 }
 
-.fa-facebook {
+.fa-facebook, .fa-twitter, .fa-street-view, .fa-phone {
 	background: #CAD3C8;
 	color: white;
 }
 
-.fa-twitter {
+/* these are repetitive selectors! : )  */
+/* .fa-twitter {
   background: #CAD3C8;
   color: white;
 }
@@ -580,7 +592,7 @@ opacity: .8;
 .fa-phone {
   background: #CAD3C8;
   color: white;
-}
+} */
 
 @media (max-width: 414px) {
   .fab {
