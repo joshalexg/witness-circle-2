@@ -290,26 +290,7 @@ button#prev {
   margin-bottom: 40px;
 }
 
-@media (max-width:414px) {
-  #about-wrapper {
-    position: relative;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-  }
-
-  #about-pic {
-    align-items: center;
-    margin-left: 10px;
-  }
-
-  .hr-wrapper {
-    padding: 0 90px;
-  }
-
-}
-
-@media (min-width: 415px, max-width: 900px) {
+@media (max-width: 900px) {
   #about-wrapper {
     position: relative;
     display: flex;
@@ -443,7 +424,7 @@ button#prev {
 /*--------------- CONTACT SECTION  -------------*/
 /*----------------------------------------------*/
 /* #contact {
-  
+
   background: #CAD3C8;
   padding: 20px 0;
   position: relative;
